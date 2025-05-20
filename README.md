@@ -8,6 +8,7 @@ This is a sample Android project built with **Kotlin**, using **Jetpack Compose*
 - **Jetpack Compose**
 - **MVVM (Model-View-ViewModel)**
 - **Clean Architecture**
+- **Coroutines** – For asynchronous operations
 - **Retrofit** - For HTTP networking
 - **Dagger Hilt** - For dependency injection
 - **Navigation Component** - For screen navigation
