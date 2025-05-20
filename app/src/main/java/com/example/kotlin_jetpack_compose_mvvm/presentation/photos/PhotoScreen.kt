@@ -54,7 +54,7 @@ fun PhotoList(photos: List<Photo>) {
             Card(modifier = Modifier.fillMaxWidth().padding(8.dp)) {
                 Column(modifier = Modifier.padding(16.dp), horizontalAlignment = Alignment.CenterHorizontally) {
                     AsyncImage(
-                        model = photo.url,
+                        model = photo.thumbnailUrl,
                         contentDescription = "Network Image",
                         error = painterResource(id = R.drawable.image_not_found),
                         modifier = Modifier.size(
