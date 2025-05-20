@@ -14,14 +14,16 @@ This is a sample Android project built with **Kotlin**, using **Jetpack Compose*
 
 ## 📁 Project Structure
 
+```text
 com.example.kotlin_jetpack_compose_mvvm/
-├── data/ # DTOs, repository implementations, API services
-├── domain/ # Use cases, domain models, and interfaces
-├── di/ # Hilt modules for DI
-├── presentation/ # ViewModels, Screens, and UI logic
+├── data/               # DTOs, repository implementations, API services
+├── domain/             # Use cases, domain models, and interfaces
+├── di/                 # Hilt modules for DI
+├── presentation/       # ViewModels, Screens, and UI logic
 ├── ui/
-│ └── navigation/ # Navigation setup and screen routes
-└── MainActivity.kt # App launcher
+│   └── navigation/     # Navigation setup and screen routes
+└── MainActivity.kt     # App launcher
+
 
 
 ## 🌐 APIs Used
