@@ -12,8 +12,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class CommentViewModel @Inject constructor(
-    private val getCommentsUseCase: GetCommentsUseCase,
-    private val commentRepository: CommentRepository
+    private val getCommentsUseCase: GetCommentsUseCase
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow<CommentUiState>(CommentUiState.Loading)
@@ -27,16 +26,10 @@ class CommentViewModel @Inject constructor(
         viewModelScope.launch {
             try {
                 val comments = getCommentsUseCase()
-                val comments2 = commentRepository.getComments()
                 _uiState.value = CommentUiState.Success(comments)
             } catch (e: Exception) {
                 _uiState.value = CommentUiState.Error("Failed to load comments")
             }
         }
     }
-
-    // we can't add any business logic here,
-    // view model just wanna know if the retrieving data is success or fail
-
-
 }
